@@ -2,58 +2,70 @@ html * {
     font-family: 'Franklin Gothic Medium', Arial, sans-serif
 }
 
-.name {
-    text-align: center;
-    font-size: 15vh;
-    padding-top: 15vw;
-    padding-bottom: 0vw;
-    margin-top: 2vw;
-    margin-bottom: .5vw;
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Put the wrapper behind the cards */
+  overflow: hidden; /* Hide any overflowing parts of the background image */
 }
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("starlights.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  clip-path: inset(0); /* Crop off edges */
+  -webkit-clip-path: inset(0);
+  z-index: -1; /* Put the background behind the cards */
+}
+
+.top-bar {
+  background-color: #333; /* Set the background color to a solid color (e.g., dark gray) */
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2vw;
+}
+
 
 .hometitle {
   width: 100vw;
   height: 100vh;
-  background-color: #f0f0f0;
   position: relative;
 }
 
-.description {
+.name {
+  position: absolute;
   text-align: center;
-  font-size: 2.5vh;
-  padding-top: 0vw;
-  padding-bottom: 6vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  top: 14rem;
+  width: 100vw;
+  font-size: 9rem;
+}
+
+.description {
+  position: absolute;
+  top: 32rem;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .disclaimer {
+  position: absolute;
+  top: 42rem;
+  left: 2%;
+  right: 2%;
   text-align: right;
-  font-size: 2vh;
-
+  font-size: 1.2rem;
 }
-
-.background-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Put the wrapper behind the cards */
-    overflow: hidden; /* Hide any overflowing parts of the background image */
-  }
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("starlights.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    clip-path: inset(0); /* Crop off edges */
-    -webkit-clip-path: inset(0); /* For Safari support */
-    z-index: -1; /* Put the background behind the cards */
-  }
