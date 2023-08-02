@@ -1,0 +1,59 @@
+html * {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif
+}
+
+.name {
+    text-align: center;
+    font-size: 15vh;
+    padding-top: 15vw;
+    padding-bottom: 0vw;
+    margin-top: 2vw;
+    margin-bottom: .5vw;
+}
+
+.hometitle {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.description {
+  text-align: center;
+  font-size: 2.5vh;
+  padding-top: 0vw;
+  padding-bottom: 6vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.disclaimer {
+  text-align: right;
+  font-size: 2vh;
+
+}
+
+.background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Put the wrapper behind the cards */
+    overflow: hidden; /* Hide any overflowing parts of the background image */
+  }
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("starlights.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    clip-path: inset(0); /* Crop off edges */
+    -webkit-clip-path: inset(0); /* For Safari support */
+    z-index: -1; /* Put the background behind the cards */
+  }
