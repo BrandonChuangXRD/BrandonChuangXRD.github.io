@@ -27,15 +27,31 @@ html * {
   z-index: -1; /* Put the background behind the cards */
 }
 
+.top-bar-item {
+  display: inline-block; /* or use 'block' if you want the link to take up the whole line */
+  padding: 10px 20px;
+  background-color: transparent; /* Set the background color to transparent */
+  color: #007bff; /* Change text color to your desired link color */
+  text-decoration: none; /* Remove underline by default */
+  border: 2px solid #007bff; /* Add a border to make the link visible */
+  border-radius: 5px; /* Rounded corners */
+}
+
 .top-bar {
   background-color: #333; /* Set the background color to a solid color (e.g., dark gray) */
+  display: flex;
   color: #fff;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   padding: 2vw;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
 }
+
 
 
 .hometitle {
@@ -47,14 +63,14 @@ html * {
 .name {
   position: absolute;
   text-align: center;
-  top: 14rem;
+  top: 10vw;
   width: 100vw;
-  font-size: 9rem;
+  font-size: 7rem;
 }
 
 .description {
   position: absolute;
-  top: 32rem;
+  top: 26vw;
   left: 10%;
   right: 10%;
   text-align: center;
@@ -63,7 +79,7 @@ html * {
 
 .disclaimer {
   position: absolute;
-  top: 42rem;
+  top: 35vw;
   left: 2%;
   right: 2%;
   text-align: right;
