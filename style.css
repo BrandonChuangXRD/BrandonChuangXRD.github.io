@@ -2,6 +2,10 @@ html * {
     font-family: 'Franklin Gothic Medium', Arial, sans-serif
 }
 
+body {
+  margin: 0;
+}
+
 .background-wrapper {
   position: fixed;
   top: 0;
@@ -45,7 +49,7 @@ html * {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 2vw;
+  padding: 15px;
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -84,4 +88,17 @@ html * {
   right: 2%;
   text-align: right;
   font-size: 1.2rem;
+}
+
+.contentcard {
+  background-color: #fff; /* Set the background color to a solid color (e.g., dark gray) */
+  display: flex;
+  color: #333;
+  width: 100%;
+  padding: 250px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  margin: 0;
 }
