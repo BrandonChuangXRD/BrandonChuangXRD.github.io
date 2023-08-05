@@ -87,7 +87,7 @@ body {
 .name {
   margin-top: 100px;
   margin-bottom: 15px; /* Adjust the spacing between name and description */
-  font-size: 120px;
+  font-size: 10vw;
 }
 
 .description {
