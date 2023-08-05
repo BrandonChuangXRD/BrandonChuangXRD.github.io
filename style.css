@@ -70,11 +70,15 @@ body {
   position: relative;
 }
 
+.htlist{
+  list-style: none;
+}
+
 .name {
   position: absolute;
   text-align: center;
   top: 10vw;
-  width: 100vw;
+  width: 90vw;
   font-size: 7rem;
 }
 
