@@ -85,26 +85,33 @@ body {
 }
 
 .name {
-  margin-top: 100px;
-  margin-bottom: 15px; /* Adjust the spacing between name and description */
+  margin-top: 10px;
+  margin-bottom: 5px; /* Adjust the spacing between name and description */
   font-size: 10vw;
 }
 
 .description {
   margin-bottom: 100px; /* Adjust the spacing between description and disclaimer */
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .disclaimer {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
+  margin-bottom: 100px;
 }
 
-.contentcard {
+.tldrcontent {
+  margin-bottom: 50px; /* Adjust the spacing between description and disclaimer */
+  margin-top: 50px;
+  font-size: 2.5rem;
+  width: 80%;
+}
+
+.contentcardodd {
   background-color: #fff; /* Set the background color to a solid color (e.g., dark gray) */
   display: flex;
   color: #333;
   width: 100%;
-  height: 50px;
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
